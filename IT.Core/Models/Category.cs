@@ -9,8 +9,8 @@ namespace IT.Core.Models
     public class Category : BaseEntity
     {
         public string Name { get; set; }
-        public int Top { get; set; }
-        public int Index { get; set; }
-        public bool Listing { get; set; }
+        public int Top { get; set; } = 0;
+        public int Index { get; set; } = 0;
+        public bool Listing { get; set; } = true;
     }
 }
