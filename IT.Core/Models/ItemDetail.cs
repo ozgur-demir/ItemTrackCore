@@ -8,11 +8,10 @@ namespace IT.Core.Models
 {
     public class ItemDetail:BaseEntity
     {
-        public int ItemId { get; set; }
         public int Lang { get; set; }
         public string Json { get; set; }
-        public int UserId { get; set; }
+        public int UserID { get; set; }
+        public int ItemID { get; set; }
         public Item Item { get; set; }
-        public User User { get; set; }
     }
 }

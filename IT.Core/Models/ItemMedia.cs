@@ -20,6 +20,7 @@ namespace IT.Core.Models
         public string File { get; set; }
         public string Alt { get; set; }
         public int ItemId { get; set; }
+        public Item Item { get; set; }
 
     }
 }

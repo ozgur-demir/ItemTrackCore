@@ -12,5 +12,6 @@ namespace IT.Core.Models
         public int Top { get; set; } = 0;
         public int Index { get; set; } = 0;
         public bool Listing { get; set; } = true;
+        public int UserId { get; set; }
     }
 }

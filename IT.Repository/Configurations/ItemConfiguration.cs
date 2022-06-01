@@ -13,7 +13,11 @@ namespace IT.Repository.Configurations
     {
         public void Configure(EntityTypeBuilder<Item> builder)
         {
-            throw new NotImplementedException();
+            builder.HasKey(x => x.Id);
+            builder.Property(x => x.Id).UseIdentityColumn();
+            builder.Property(x => x.Name).IsRequired();
+            builder.Property(x => x.UserId).IsRequired();
+
         }
     }
 }

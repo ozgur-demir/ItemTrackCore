@@ -14,10 +14,10 @@ namespace IT.Repository.Seeds
         public void Configure(EntityTypeBuilder<Category> builder)
         {
             builder.HasData(
-                new Category { Id = 0, Name = "Color" },
-                new Category { Id = 1, Name = "Purple",Top=0 },
-                new Category { Id = 2, Name = "Blue",Top = 0 },
-                new Category { Id = 3, Name = "Red", Top = 0 }
+                new Category { Id = 1, Name = "Color",Top=0,UserId=1 },
+                new Category { Id = 2, Name = "Purple",Top=0, UserId = 1 },
+                new Category { Id = 3, Name = "Blue",Top = 0, UserId = 1 },
+                new Category { Id = 4, Name = "Red", Top = 0, UserId = 1 }
                 );
         }
     }

@@ -9,12 +9,11 @@ using System.Threading.Tasks;
 
 namespace IT.Repository.Seeds
 {
-    internal class UserSeed : IEntityTypeConfiguration<User>
+    internal class ItemSeed : IEntityTypeConfiguration<Item>
     {
-        public void Configure(EntityTypeBuilder<User> builder)
+        public void Configure(EntityTypeBuilder<Item> builder)
         {
-            builder.HasData(new User { Id = 1, Name = "Özgür Demir", Mail = "info@csyolu.com", Active = true, Type = User.UserType.Admin, Password = "12345" });
-
+            builder.HasData(new Item { Id=1, Name ="Lacoste T-Shirt", UserId = 1 , Desc="It's a description.",ShortDesc="It's a short description"});
         }
     }
 }
