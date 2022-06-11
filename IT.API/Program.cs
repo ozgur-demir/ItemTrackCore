@@ -3,6 +3,7 @@ using IT.Core.UnitOfWorks;
 using IT.Repository;
 using IT.Repository.Repositories;
 using IT.Repository.UnitOfWorks;
+using IT.Service.Mapping;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
@@ -16,6 +17,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+builder.Services.AddAutoMapper(typeof(MapProfile));
+
 
 builder.Services.AddDbContext<AppDbContext>(x => {
 
